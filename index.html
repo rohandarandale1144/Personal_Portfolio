@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohan-Software Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bcf160fc49.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="Images/Favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#header"><img src="Images/png/logo-white.png" class="logo"></a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Rohan</span><br>Web Developer</h1>
+            </div>
+        </div>
+    </div>
+    
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/Ro.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>As the Event Management Lead at CodeChef PCCOE Chapter, I organize and facilitate various coding
+                        contests, workshops, and webinars for the students and faculty of Pimpri Chinchwad College Of
+                        Engineering (PCCoE). I also collaborate with the CodeChef team and other chapters to plan and
+                        execute inter-college events and initiatives.I have developed a strong
+                        foundation in computer science concepts and programming principles, with a keen interest in Data
+                        Structures and Algorithms (DSA), web development, and MongoDB, SQL, and JavaScript. I have also
+                        earned multiple certifications from Coding Ninjas, a leading online coding platform, in OOP in
+                        Java and C++. My goal is to apply my skills and knowledge to create innovative and impactful
+                        solutions for real-world problems.</p>
+                    <div class="tab-titles">
+                        <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-link" onclick="opentab('experience')">Experience</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Frontend Developement</li>
+                            <li><span>DSA</span><br>CP & Problem Solving</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2025</span><br>B.Tech IT from PCCOE, Pune.</li>
+                            <li><span>2021</span><br>HSC from ACS, Sonai.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022-23</span><br><b>Event Team Member at Codechef PCCOE Chapter.</b></li>
+                            <p>As an Event Assistant with the CodeChef PCCOE Chapter at PCCOE Pune, I played a pivotal
+                                role in orchestrating a dynamic 42-hour hackathon. Collaborating with a diverse team, we
+                                successfully organized an inclusive event that brought together participants from
+                                various colleges. The hackathon covered a spectrum of technologies, including web
+                                development, app development, blockchain, and devops. My responsibilities encompassed
+                                logistical coordination, participant engagement, and ensuring the seamless execution of
+                                this challenging yet rewarding coding marathon.</p>
+                            <li><span>2023-24</span><br><b>Event Team Lead at Codechef PCCOE Chapter.</b></li>
+                            <p>As the Event Team Lead for the CodeChef PCCOE Chapter, I led a dynamic team of 4-5
+                                members out of a total team of 25, overseeing the organization of the highly successful
+                                coding contest, Enigma Wars 2.0. Drawing participants from various colleges, the event
+                                showcased technical prowess and fostered healthy competition. In my role, I provided
+                                strategic leadership, coordinated team efforts, and ensured the flawless execution of
+                                this challenging coding competition. Through effective teamwork, we elevated the coding
+                                culture within the CodeChef PCCOE Chapter, contributing to the success of our flagship
+                                event.</p>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Transforming ideas into visually stunning websites. Our web design service combines creativity
+                        and functionality to craft engaging online experiences. From sleek user interfaces to responsive
+                        designs, we bring your digital vision to life, ensuring a seamless and captivating online
+                        presence for your brand.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-terminal"></i>
+                    <h2>Website Building</h2>
+                    <p>Crafting interactive and user-friendly websites through expert frontend development. We
+                        specialize in translating designs into seamless, high-performance web experiences. Elevate your
+                        online presence with our skillful approach to coding and design, creating websites that
+                        captivate and engage your audience.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-microchip"></i>
+                    <h2>Problem Setting</h2>
+                    <p>Challenge the minds of aspiring programmers with our curated set of Data Structures and
+                        Algorithms (DSA) problems. As a dedicated problem setter, we design thought-provoking coding
+                        challenges to sharpen skills and foster learning. Elevate your coding journey with our carefully
+                        crafted problems that inspire growth and mastery in the world of algorithms.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/work-1.png" alt="Work1">
+                    <div class="layer">
+                        <h3>NewsMonkey</h3>
+                        <p>NewsMonkey: Your go-to React-powered news aggregator.
+                            Harness the power of real-time news with NewsAPI integration.
+                            Seamlessly browse headlines, articles, and breaking news.
+                            A sleek, responsive interface for an immersive news reading experience.
+                            Stay informed effortlessly!</p>
+                        <a href="https://github.com/rohandarandale1144/NewsMonkey" target="_blank"><i
+                                class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work-2.png" alt="Work2">
+                    <div class="layer">
+                        <h3>BMI-Calculator</h3>
+                        <p>The BMI (Body Mass Index) Calculator is a web-based application created using HTML, CSS, and
+                            JavaScript.
+                            It allows users to input their height and weight, and it calculates their BMI based on the
+                            entered values.</p>
+                        <a href="https://github.com/rohandarandale1144/BMI-Calculator" target="_blank"><i
+                                class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work-3.png" alt="Work3">
+                    <div class="layer">
+                        <h3>Tic-Tac-Toe Game</h3>
+                        <p>This is a simple web-based Tic Tac Toe game project created to learn and practice fundamental
+                            concepts
+                            of web development using HTML, CSS, and JavaScript.</p>
+                        <a href="https://github.com/rohandarandale1144/Tic_Tac_Toe_Game" target="_blank"><i
+                                class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#header" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>rohandarandale1144@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9021813919</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                    <a href="Images/resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Enter your name" required>
+                        <input type="email" name="Email" placeholder="Enter your email" required>
+                        <textarea name="Message" rows="6" placeholder="Enter your message"></textarea>
+                        <button type="submit" class="btn btn2">Connect</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2023. Made with ❤️ by Rohan.</p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx0t14pj9bCqQGTDC_9d8Q5KUaL7OGStY4HsMJUq5yjT2SkdU0NlFs7COELvjmi4QN2/exec'
+        const form = document.forms['submit-to-google-sheet']
+        // const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Your Message sent successfully!"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 3000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
